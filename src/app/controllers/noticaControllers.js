@@ -1,0 +1,9 @@
+class NoticiaControllers {
+    index(){
+
+    }
+
+    show(){
+        
+    }
+}

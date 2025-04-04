@@ -47,7 +47,12 @@ App.post('/noticias',(req,res) =>{
 
 //Atualizar 
 
-
+App.delete('/noticias/:id',(req,res)=>{
+    let id = req.params.id;
+    let index = noticias.findIndex(item => id == item.id);
+    noticias.splice(index,1);
+    res.send('Noticia Apagada');
+})
 
 
 
